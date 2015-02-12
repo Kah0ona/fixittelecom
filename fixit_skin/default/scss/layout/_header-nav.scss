@@ -282,3 +282,19 @@ nav {
         display: block;
     }
 }
+@media all and (max-width: 1270px) {
+  .nav-1{
+    margin-left: 20px !important;
+  }
+  .nav-primary{
+    width:600px !important;
+  }
+}
+@media all and (max-width: 800px) {
+  .nav-1{
+    margin-left: 20px !important;
+  }
+  .nav-primary{
+    width:520px !important;
+  }
+}

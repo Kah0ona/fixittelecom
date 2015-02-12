@@ -8,7 +8,7 @@ module.exports = {
   all: {
     files: [
       'fixit_app/*',
-	  'fixit_skin/*',
+	    'fixit_skin/**',
 	],
     tasks: [
 	  'clean:dist',

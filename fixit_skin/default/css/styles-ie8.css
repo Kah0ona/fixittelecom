@@ -2870,6 +2870,11 @@ a.skip-link {
   right: 0px;
 }
 
+@media all and (max-width: 1270px) {
+  .logo {
+    margin-left: 20px !important;
+  }
+}
 /* ============================================ *
  * Nav - Skip Link
  * ============================================ */
@@ -3030,6 +3035,24 @@ nav {
   display: block;
 }
 
+@media all and (max-width: 1270px) {
+  .nav-1 {
+    margin-left: 20px !important;
+  }
+
+  .nav-primary {
+    width: 600px !important;
+  }
+}
+@media all and (max-width: 800px) {
+  .nav-1 {
+    margin-left: 20px !important;
+  }
+
+  .nav-primary {
+    width: 520px !important;
+  }
+}
 /* ============================================ *
  * Search - Skip Link
  * ============================================ */
@@ -3565,12 +3588,12 @@ nav {
   text-align: center;
   padding: 0 auto;
   background: #fff;
-  height: 61px;
 }
 
 .eigenschapimg {
   padding: 15px 30px;
   display: inline;
+  width: 24%;
 }
 
 .cb {
@@ -3645,7 +3668,7 @@ nav {
   margin-top: 10px;
   background: url(../images/headerbg.png);
   background-size: cover;
-  height: 200px;
+  padding: 20px;
 }
 
 .footer25 {
@@ -3656,6 +3679,12 @@ nav {
 }
 .footer25:last-of-type {
   margin-right: 0;
+}
+.footer25 p {
+  color: white;
+}
+.footer25 h3 {
+  color: white;
 }
 
 .footer-container {
@@ -3739,6 +3768,42 @@ nav {
   display: none;
 }
 
+@media all and (max-width: 940px) {
+  .eigenschapimg {
+    width: 48%;
+  }
+}
+@media all and (max-width: 720px) {
+  .eigenschapimg {
+    width: 48%;
+    padding: 20px;
+  }
+
+  .thumbnail1 {
+    padding: 10px 10px;
+    height: 130px;
+  }
+
+  .thumbnail2 {
+    padding: 10px 10px;
+    height: 130px;
+  }
+
+  .footer25 {
+    width: 50%;
+    float: left;
+    margin-right: 0px;
+  }
+}
+@media all and (max-width: 500px) {
+  .eigenschapimg {
+    width: 100%;
+  }
+
+  .footer25 {
+    width: 100%;
+  }
+}
 /* ================================================= *
  * General Product List Styles (not module-specific)
  * ================================================= */

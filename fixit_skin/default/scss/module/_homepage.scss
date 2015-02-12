@@ -41,12 +41,12 @@
   text-align: center;
   padding: 0 auto;
   background: #fff;
-  height: 61px;
 }
 
 .eigenschapimg {
 	padding: 15px 30px;
 	display:inline;
+	width:24%;
 }
 
 .cb {
@@ -121,7 +121,7 @@
 	margin-top: 10px;
 	background: url(../images/headerbg.png);
 	background-size: cover;
-	height: 200px;
+	padding:20px;
 }
 
 .footer25 {
@@ -131,6 +131,12 @@
 	margin-top:30px;
 	&:last-of-type {
 		margin-right:0;
+	}
+	p{
+		color:white;
+	}
+	h3{
+		color:white;
 	}
 }
 
@@ -213,3 +219,41 @@
 
 .paypal-logo {display:none;}
 
+@media all and (max-width: 1270px) {
+    .eigenschapimg{
+    	
+    }
+}
+
+@media all and (max-width: 940px) {
+    .eigenschapimg{
+    	width:48%;
+    }
+}
+@media all and (max-width: 720px) {
+    .eigenschapimg{
+    	width:48%;
+    	padding:20px;
+    }
+    .thumbnail1{
+    	padding: 10px 10px;
+    	height:130px;
+    }
+    .thumbnail2{
+    	padding: 10px 10px;
+    	height:130px;
+    }
+    .footer25{
+    	width:50%;
+    	float:left;
+    	margin-right:0px;
+    }
+}
+@media all and (max-width: 500px) {
+    .eigenschapimg{
+    	width:100%;
+    }
+    .footer25{
+    	width:100%;
+    }
+}

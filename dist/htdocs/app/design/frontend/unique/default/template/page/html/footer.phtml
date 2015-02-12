@@ -30,7 +30,9 @@
         <!-- <address class="copyright"><?php echo $this->getCopyright() ?></address> -->
 
 	        <div class="footer25">
-	        	<img src="<?php echo $this->getSkinUrl('images/logo.png'); ?>"/>
+	        	<a class="logo" href="<?php echo $this->getUrl('') ?>">
+		            <img src="<?php echo $this->getSkinUrl('images/logo_fixit.png'); ?>"/>
+		        </a>
 	        </div>
 	        <div class="footer25">
 	        	<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footerblock1')->toHtml() ?>

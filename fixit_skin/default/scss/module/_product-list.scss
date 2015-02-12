@@ -354,7 +354,8 @@ $productsGridActionHeight: 85px;
 
 @include bp(min-width, $bp-xsmall + 1) {
     .products-list .product-name a {
-        font-size: $f-size-xxl;
+        font-size: $f-size-xxl + 6;
+        font-family: 'Oswald';
     }
 }
 

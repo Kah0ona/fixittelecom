@@ -7,7 +7,7 @@ module.exports = {
   // ----- Watch tasks ----- //
   all: {
     files: [
-      'fixit_app/*',
+      'fixit_app/**',
 	    'fixit_skin/**',
 	],
     tasks: [

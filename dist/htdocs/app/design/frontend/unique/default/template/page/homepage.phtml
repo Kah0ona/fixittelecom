@@ -30,7 +30,7 @@
  */
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 
 <!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
@@ -60,7 +60,7 @@
                         </div></a>
                     </div>
                     <div class="col-25">
-                        <div class="headline-small1">
+                        <a href="onderdelen.html"><div class="headline-small1">
                             <div class="headlinesmallinhoudupper">
                                 <div class="headlinesmalltitle">
                                     Smartphone<br/>
@@ -70,18 +70,19 @@
                             <div class="headlinesmallinhoud">
                                 <div class="headlinesmallmore">Klik hier</div>
                             </div>
-                        </div>
-                        <div class="headline-small2">
+                        </div></a>
+                        <a href="onderdelen.html"><div class="headline-small2">
                              <div class="headlinesmallinhoudupper">
                                 <div class="headlinesmalltitle">
                                     Tablet<br/>
                                     <span style="font-family: 'Open Sans'; font-weight: bold; font-size: 14px;">onderdelen</span>
                                 </div>
                             </div>
+
                             <div class="headlinesmallinhoud">
                                 <div class="headlinesmallmore">Klik hier</div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                     <div class="cb"></div>
                     <div class="eigenschappen">
@@ -93,31 +94,14 @@
                     <div class="cb"></div>
                     <div class="col-75" style="width: 74%;margin-right:1%;">
                         <div class="banner75">Populaire onderdelen</div>
-                        <div class="producten">
-                            <div class="product75">
-                                asd
+                            <div class="producten">
+                                <?php echo $this->getChildHtml('bestseller') ?>
                             </div>
-                            <div class="product75">
-                                asd
-                            </div>
-                            <div class="product75" style="margin:0;">
-                                asd
-                            </div>
-                        </div>
 
                         <div class="banner75">Populaire accessoires</div>
-                        <div class="producten">
-                            <div class="product75">
-                                asd
+                            <div class="producten">
+                                <?php echo $this->getChildHtml('bestseller_parts') ?>
                             </div>
-                            <div class="product75">
-                                asd
-                            </div>
-                            <div class="product75" style="margin:0;">
-                                asd
-                            </div>
-                            
-                        </div>
                     </div>
                     <div class="col-25">
                         <div class="thumbnail1">

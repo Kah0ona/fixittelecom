@@ -126,6 +126,21 @@
                 <label>Right Column</label>
             </block>
 
+
+            <block type="catalog/product_bestseller" template="catalog/product/bestseller.phtml" 
+                        name="product_bestseller" as="bestseller" translate="label">
+
+                <label>Bestseller</label>
+                <action method="setLimit"><value>3</value></action>
+            </block>
+
+            <block type="catalog/product_bestseller" template="catalog/product/bestseller_parts.phtml" 
+                        name="product_bestseller" as="bestseller_parts" translate="label">
+
+                <label>Bestseller</label>
+                <action method="setLimit"><value>3</value></action>
+            </block>
+
             <block type="page/html_wrapper" name="footer.before" as="footer_before" translate="label">
                 <label>Page Footer</label>
                 <action method="setElementClass"><value>footer-before-container</value></action>

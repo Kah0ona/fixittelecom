@@ -155,30 +155,33 @@ h6, .h6 { @include h6; }
 
 .block-title {
     position: relative;
-    padding: 10px 0 0;
+    padding: 10px 10px;
     margin-bottom: 5px;
+    background: #272237;
+    color: white;
+    font-family: 'Oswald';
     border-top: 1px solid $c-module-border;
 
     h2,
     h3,
     strong {
         @include h4;
-        color: $c-text-primary;
+        color: white;
         margin-bottom: 0;
         text-transform: uppercase;
         font-weight: 600;
+        font-family: 'Oswald';
     }
     small {
         font-size: 100%;
         font-weight: normal;
-        color: $c-text-gray;
+        color: white;
     }
 }
 
 // On account pages, don't remove the top border in order to create separation between block and .block-account
 body:not(.customer-account) .block:first-child .block-title {
     border-top: none;
-    padding-top: 0;
 }
 
 .block-subtitle {
@@ -284,16 +287,16 @@ body:not(.customer-account) .block:first-child .block-title {
 
     li {
         text-transform: uppercase;
-        font-family: $f-stack-special;
+        font-family: "Oswald";
         margin: 7px 0;
 
         strong {
             font-weight: 400;
-            color: $c-action;
+            color: white;
         }
 
         a {
-            color: $c-text;
+            color: white;
 
             &:hover {
                 color: $c-action;
@@ -574,7 +577,8 @@ a.button:hover {
 
 .breadcrumbs {
     overflow: hidden;
-    margin: -15px 0 15px;
+    margin: 0 auto;
+    max-width: $max-container-width;
 }
 
 .breadcrumbs li {
@@ -586,7 +590,7 @@ a.button:hover {
 
 .breadcrumbs a {
     float: left;
-    color: $c-text;
+    color: white;
 }
 
 .breadcrumbs a:hover {
@@ -594,7 +598,7 @@ a.button:hover {
 }
 
 .breadcrumbs strong {
-    color: $c-text;
+    color: white;
     font-weight: normal;
 }
 
@@ -734,6 +738,15 @@ a.button:hover {
     &:after {
         @include clearfix;
     }
+}
+
+.breadcrumb-container {
+    position: relative;
+    padding: 8px 0;
+    font-weight: bold;
+    color: white;
+    background: #222;
+
 }
 
 @include bp(min-width, 480px) {

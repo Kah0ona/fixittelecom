@@ -666,8 +666,11 @@ h6, .h6 {
 
 .block-title {
   position: relative;
-  padding: 10px 0 0;
+  padding: 10px 10px;
   margin-bottom: 5px;
+  background: #272237;
+  color: white;
+  font-family: 'Oswald';
   border-top: 1px solid #CCCCCC;
 }
 .block-title h2,
@@ -683,20 +686,20 @@ h6, .h6 {
   line-height: 1.4;
   text-rendering: optimizeSpeed;
   text-transform: uppercase;
-  color: #3399CC;
+  color: white;
   margin-bottom: 0;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: 'Oswald';
 }
 .block-title small {
   font-size: 100%;
   font-weight: normal;
-  color: #A0A0A0;
+  color: white;
 }
 
 body:not(.customer-account) .block:first-child .block-title {
   border-top: none;
-  padding-top: 0;
 }
 
 .block-subtitle {
@@ -862,17 +865,17 @@ body:not(.customer-account) .block:first-child .block-title {
 .block-account li,
 .block-cms-menu li {
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald";
   margin: 7px 0;
 }
 .block-account li strong,
 .block-cms-menu li strong {
   font-weight: 400;
-  color: #3399CC;
+  color: white;
 }
 .block-account li a,
 .block-cms-menu li a {
-  color: #636363;
+  color: white;
 }
 .block-account li a:hover,
 .block-cms-menu li a:hover {
@@ -1143,7 +1146,8 @@ a.button:hover {
  */
 .breadcrumbs {
   overflow: hidden;
-  margin: -15px 0 15px;
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 .breadcrumbs li {
@@ -1155,7 +1159,7 @@ a.button:hover {
 
 .breadcrumbs a {
   float: left;
-  color: #636363;
+  color: white;
 }
 
 .breadcrumbs a:hover {
@@ -1163,7 +1167,7 @@ a.button:hover {
 }
 
 .breadcrumbs strong {
-  color: #636363;
+  color: white;
   font-weight: normal;
 }
 
@@ -1307,6 +1311,14 @@ a.button:hover {
   content: '';
   display: table;
   clear: both;
+}
+
+.breadcrumb-container {
+  position: relative;
+  padding: 8px 0;
+  font-weight: bold;
+  color: white;
+  background: #222;
 }
 
 .footer-container {
@@ -4266,12 +4278,31 @@ nav {
   width: 32.66%;
   margin-right: 1%;
   background: white;
+  position: relative;
+  padding-top: 15px;
   float: left;
-  border-radius: 3px;
-  height: 200px;
+  border-radius: 3px 3px 0px 0px;
+  height: 190px;
 }
 .product75:last-of-type {
-  margin: 0;
+  margin-right: 0;
+}
+.product75 img {
+  margin: auto auto;
+  max-height: 80px;
+}
+.product75 .product_details {
+  height: 50px;
+  width: 100%;
+  border-radius: 0px 0px 3px 3px;
+  background: #222;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.product75 .product-image {
+  border: 0;
 }
 
 .producten {
@@ -4325,8 +4356,8 @@ nav {
 .footer25 {
   float: left;
   width: 20%;
+  color: white;
   margin-right: 6%;
-  margin-top: 30px;
 }
 .footer25:last-of-type {
   margin-right: 0;
@@ -4402,7 +4433,7 @@ nav {
   padding: 3px 7px;
   text-transform: uppercase;
   font-weight: bold;
-  width: 73px;
+  width: 69px;
 }
 
 .headlinesmallinhoudupper {
@@ -4419,12 +4450,65 @@ nav {
   display: none;
 }
 
+#search_mini_form .search-button {
+  background: #17364a !important;
+  position: absolute;
+  top: 6px !important;
+  -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+#search_mini_form .input-box {
+  padding-top: 6px;
+}
+
+#search {
+  box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.footer25 h3 {
+  padding: 10px;
+  background: #111;
+  color: white;
+  font-family: 'Oswald';
+}
+
+.footer25 p a {
+  color: white;
+}
+
+.bestseller_price {
+  float: right;
+  padding: 5px 10px;
+  margin: 10px;
+  background: #17364A;
+  border-radius: 5px;
+}
+
+.bestseller_name {
+  float: left;
+  margin: 14px;
+}
+
 @media all and (max-width: 940px) {
   .eigenschapimg {
     width: 48%;
   }
 }
+@media all and (max-width: 880px) {
+  .bestseller_price {
+    top: -130px;
+    right: 5px;
+    position: absolute;
+  }
+}
 @media all and (max-width: 720px) {
+  .product75 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .eigenschapimg {
     width: 48%;
     padding: 20px;
@@ -4448,10 +4532,41 @@ nav {
 }
 @media all and (max-width: 500px) {
   .eigenschapimg {
-    width: 100%;
+    width: 70%;
   }
 
   .footer25 {
+    width: 100%;
+  }
+
+  .eigenschapimg {
+    width: 48%;
+    padding: 20px;
+  }
+
+  .thumbnail1 {
+    padding: 10px 10px;
+    height: 130px;
+  }
+
+  .thumbnail2 {
+    padding: 10px 10px;
+    height: 130px;
+  }
+
+  .col-25 {
+    width: 100%;
+  }
+
+  .col-75 {
+    width: 100%;
+  }
+
+  .product75 {
+    width: 100%;
+  }
+
+  .banner75 {
     width: 100%;
   }
 }
@@ -4844,7 +4959,8 @@ p.product-name a:hover {
 
 @media only screen and (min-width: 480px) {
   .products-list .product-name a {
-    font-size: 18px;
+    font-size: 24px;
+    font-family: 'Oswald';
   }
 }
 @media only screen and (max-width: 1279px) {

@@ -68,12 +68,34 @@
 	width: 32.66%;
 	margin-right: 1%;
 	background:white;
+	position: relative;
+	padding-top: 15px;
 	float:left;
-	border-radius: 3px;
+	border-radius: 3px 3px 0px 0px;
 	&:last-of-type {
-		margin:0;
+		margin-right:0;
 	}
-	height: 200px;
+	height: 190px;
+
+	img {
+		margin: auto auto;
+		max-height: 80px;
+	}
+
+	.product_details {
+		height: 50px;
+		width: 100%;
+		border-radius: 0px 0px 3px 3px;
+		background: #222;
+		font-weight: bold;
+		color: white;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.product-image {
+		border:0;
+	}
 }
 
 .producten {
@@ -127,17 +149,18 @@
 .footer25 {
 	float:left;
 	width: 20%;
+	color: white;
 	margin-right: 6%;
-	margin-top:30px;
 	&:last-of-type {
 		margin-right:0;
 	}
 	p{
 		color:white;
 	}
-	h3{
+	h3{ 
 		color:white;
 	}
+
 }
 
 .footer-container {
@@ -153,7 +176,7 @@
 
 .headlinebiginhoud {
 	position: absolute;
-	bottom: 20px;
+	bottom: 20px;	
 	left: 20px;
 }
 
@@ -203,7 +226,7 @@
 	padding: 3px 7px;
 	text-transform: uppercase;
 	font-weight: bold;
-	width: 73px;
+	width: 69px;
 
 }
 
@@ -219,6 +242,49 @@
 
 .paypal-logo {display:none;}
 
+
+#search_mini_form .search-button {
+	background: #17364a !important;
+	position: absolute;
+	top: 6px !important;
+	-webkit-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
+box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
+}
+
+#search_mini_form .input-box {
+	padding-top:6px;
+
+}
+
+#search {
+	box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.05);
+}
+
+.footer25 h3 {
+	padding: 10px;
+	background: #111;
+	color: white;
+	font-family: 'Oswald';
+
+}
+
+.footer25 p a {
+	color: white;
+}
+
+.bestseller_price {
+	float: right;
+	padding: 5px 10px;
+	margin: 10px;
+	background: #17364A;
+	border-radius: 5px;
+}
+
+.bestseller_name {
+	float: left;
+	margin: 14px;
+}
 @media all and (max-width: 1270px) {
     .eigenschapimg{
     	
@@ -230,7 +296,19 @@
     	width:48%;
     }
 }
+@media all and (max-width: 880px) {
+	.bestseller_price{
+		top: -130px;
+		right:5px;
+		position:absolute;
+	}
+}
 @media all and (max-width: 720px) {
+    .product75{
+    	width:100%;
+    	margin-bottom:20px;
+    }
+
     .eigenschapimg{
     	width:48%;
     	padding:20px;
@@ -251,9 +329,33 @@
 }
 @media all and (max-width: 500px) {
     .eigenschapimg{
-    	width:100%;
+    	width:70%;
     }
     .footer25{
+    	width:100%;
+    }
+    .eigenschapimg{
+    	width:48%;
+    	padding:20px;
+    }
+    .thumbnail1{
+    	padding: 10px 10px;
+    	height:130px;
+    }
+    .thumbnail2{
+    	padding: 10px 10px;
+    	height:130px;
+    }
+    .col-25{
+    	width:100%;
+    }
+    .col-75{
+    	width:100% !important;
+    }
+    .product75{
+    	width:100%;
+    }
+    .banner75{
     	width:100%;
     }
 }

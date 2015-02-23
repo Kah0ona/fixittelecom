@@ -1,0 +1,125 @@
+
+@media all and (max-width: 1280px) {
+    .eigenschapimg{
+    	
+    }
+    .main-container{ 
+    	padding-left:15px;
+    	padding-right:15px;
+    }
+    .thumbnail1{
+    height:auto;
+    }
+    .thumbnail2{
+        height:auto;
+    }
+}
+
+@media all and (max-width: 940px) {
+    .eigenschapimg{
+    	width:48%;
+    }
+}
+@media all and (max-width: 880px) {
+	.bestseller_price{
+		top: -130px;
+		right:5px;
+		position:absolute;
+	}
+}
+@media all and (max-width: 770px) {
+  #nav{
+    height:auto;
+    div:first-child{
+        height:auto !important;
+    }
+    ol{
+        float:none !important;
+    }
+    #search_mini_form{
+        display:none;
+    }
+  }
+  .nav-1{
+    margin-left:0px;
+    a{
+    	padding-left:20px !important;	
+    }
+    
+  }
+  .nav-primary{
+    width:520px !important;
+  }
+}
+@media all and (max-width: 720px) {
+	.bestseller_price{
+		position:static;
+	}
+    .product75{
+    	width:100%;
+    	margin-bottom:20px;
+    }
+
+    .eigenschapimg{
+    	width:48%;
+    	padding:20px;
+    }
+    .thumbnail1{
+    	padding: 20px 20px;
+    	height:auto;
+    }
+    .thumbnail2{
+    	padding: 20px 20px;
+    	height:auto;
+    }
+    .footer25{
+    	width:50%;
+    	float:left;
+    	margin-right:0px;
+    }
+    .headline-big {
+    	background-position:-200px;
+    }
+}
+@media all and (max-width: 500px) {
+    .eigenschapimg{
+    	width:70% !important;
+    }
+    .footer25{
+    	width:100%;
+    }
+    .eigenschapimg{
+    	width:48%;
+    	padding:20px;
+    }
+    .thumbnail1{
+    	padding: 10px 10px;
+    	height:130px;
+    	margin-top:0px;
+    }
+    .thumbnail2{
+    	padding: 10px 10px;
+    	height:130px;
+    	margin-top:1px;
+    	margin-bottom: 1px;
+    }
+    .col-25{
+    	width:100%;
+    }
+    .col-75{
+    	width:100% !important;
+    }
+    .product75{
+    	width:100%;
+    }
+    .banner75{
+    	width:100%;
+    	background:url(../images/headerbg.png)
+    }
+    .headline-big {
+    	background-position:-300px;
+    }
+    .footer{
+    	margin-top: 0px;
+    }
+}

@@ -1,3 +1,5 @@
+
+
 .col-75 {
     width: 74.8%;
     margin-right: 0.2%;
@@ -31,7 +33,7 @@
     margin-top: 1px;
 }
 
-.headline-big:hover, .headline-small1:hover, .headline-small2:hover {
+.headline-big:hover, .headline-small1:hover, .headline-small2:hover, .thumbnail1:hover, .thumbnail2:hover{
 	opacity: 0.8;
 }
 
@@ -112,6 +114,9 @@
     font-size: 15px;
     padding: 32px 20px;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
+    &:hover{
+    	text-decoration: none;
+    }
 }
 
 .thumbnail2{
@@ -124,7 +129,12 @@
     font-size: 15px;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 1);
 }
-
+.no-underline{
+	text-decoration:none;
+	&:hover{
+		text-decoration:none;
+	}
+}
 .page-header {
 	padding: 0;
 }
@@ -285,77 +295,9 @@ box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.1);
 	float: left;
 	margin: 14px;
 }
-@media all and (max-width: 1270px) {
-    .eigenschapimg{
-    	
-    }
-}
-
-@media all and (max-width: 940px) {
-    .eigenschapimg{
-    	width:48%;
-    }
-}
-@media all and (max-width: 880px) {
-	.bestseller_price{
-		top: -130px;
-		right:5px;
-		position:absolute;
+.product-link{
+	color:white;
+	&:hover{
+		color:white;
 	}
-}
-@media all and (max-width: 720px) {
-    .product75{
-    	width:100%;
-    	margin-bottom:20px;
-    }
-
-    .eigenschapimg{
-    	width:48%;
-    	padding:20px;
-    }
-    .thumbnail1{
-    	padding: 10px 10px;
-    	height:130px;
-    }
-    .thumbnail2{
-    	padding: 10px 10px;
-    	height:130px;
-    }
-    .footer25{
-    	width:50%;
-    	float:left;
-    	margin-right:0px;
-    }
-}
-@media all and (max-width: 500px) {
-    .eigenschapimg{
-    	width:70%;
-    }
-    .footer25{
-    	width:100%;
-    }
-    .eigenschapimg{
-    	width:48%;
-    	padding:20px;
-    }
-    .thumbnail1{
-    	padding: 10px 10px;
-    	height:130px;
-    }
-    .thumbnail2{
-    	padding: 10px 10px;
-    	height:130px;
-    }
-    .col-25{
-    	width:100%;
-    }
-    .col-75{
-    	width:100% !important;
-    }
-    .product75{
-    	width:100%;
-    }
-    .banner75{
-    	width:100%;
-    }
 }

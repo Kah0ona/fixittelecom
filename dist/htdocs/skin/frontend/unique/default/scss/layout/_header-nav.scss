@@ -241,8 +241,8 @@ nav {
 
         /* Level 2+ */
         li.level1 ul {
-            left: 60px;
-            top: 15px;
+            left: 170px;
+            top: 15px; 
         }
 
         /* Class for js to add briefly to evaluate element positioning. */
@@ -284,17 +284,25 @@ nav {
 }
 @media all and (max-width: 1270px) {
   .nav-1{
-    margin-left: 20px !important;
+    margin-left: 20px;
   }
   .nav-primary{
-    width:600px !important;
+    width:585px !important;
+  }
+  .breadcrumbs{
+    margin-left: 20px;
+  }
+  #search_mini_form{
+    width:230px;
+    float:right;
+  }
+  .top-search-smaller{
+    width:10% !important;
   }
 }
 @media all and (max-width: 800px) {
   .nav-1{
-    margin-left: 20px !important;
+    margin-left: 20px;
   }
-  .nav-primary{
-    width:520px !important;
-  }
+
 }

@@ -47,7 +47,42 @@
 
             p.required {
                 float: right;
+                margin-right:40px;
             }
         }
     }
 }
+#contactForm{
+    .button{
+        float:left;
+    }
+    .col-25{
+
+    h3{
+        display: block;
+        color:#3399CC;
+    }
+    .banner-75{
+        h2{
+          color:white !important;  
+        }
+        
+    }
+    
+}
+}
+.required-verplichtevelden{
+    margin-right: 10% !important;
+    p{
+        margin-right: 10%;
+    }
+}
+@media all and (max-width: 850px){
+
+    #contactForm{
+        .col-25{
+            width:100%;
+        }
+    }
+}
+

@@ -5935,6 +5935,26 @@ p.product-name a:hover {
   display: none;
 }
 
+.toggle-content .currently .block-subtitle {
+  background-color: #F4F4F4;
+  padding: 10px;
+  border: 1px solid #cccccc;
+}
+.toggle-content .currently ol {
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  border-bottom: 0px;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+.toggle-content .actions {
+  border: 1px solid #cccccc;
+  border-top: 0px;
+  margin-top: -10px !important;
+  padding: 10px;
+  padding-top: 20px;
+}
+
 /* ============================================ *
  * Catalog - MSRP MAP Popup
  * ============================================ */
@@ -10659,6 +10679,14 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
     display: block;
   }
 }
+.bx-controls {
+  display: none;
+}
+
+.bx-viewport {
+  height: 330px !important;
+}
+
 .col-75 {
   width: 74.8%;
   margin-right: 0.2%;

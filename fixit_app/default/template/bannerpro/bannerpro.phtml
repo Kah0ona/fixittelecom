@@ -1,0 +1,33 @@
+<?php
+	$bannerCollection = $this->getCollection();
+	$configData = Mage::getStoreConfig('bannerpro');
+	if($configData['settings']['time_delay'] != null) {
+		$timeDelay = $configData['settings']['time_delay'];
+	}
+	else {
+ 		$timeDelay = 5000;
+	}
+	$i = 1;
+?>
+<div id="top_banner" style="padding: 0px; background: transparent none repeat scroll 0% 0%; position: relative;">
+	<div class="Slider">
+		<?php foreach ($bannerCollection as $banner): $effects .= $banner->getEffects().", "; ?>
+			<div class="banner">
+				
+				<a href="<?php echo $banner->getWeblink() ?>" title="<?php echo $banner->getWeblink() ?>">
+					
+     					<div class="headlinebiginhoud"> 
+                            <div class="headlinebigtitle"><?php echo $banner->getText() ?></div>
+                            <div class="headlinebigmore">Klik hier</div>
+                        </div>
+					
+					<img title="<?php echo $banner->getTitle() ?>" alt="<?php echo $banner->getTitle() ?>" src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . $banner->getFilename() ?>" />
+				</a>
+				
+			</div>
+    	<?php $i++; endforeach; ?>
+  	</div>
+	
+</div>
+<script src="/skin/frontend/unique/default/js/jquery.bxslider.js" type="text/javascript"></script>
+<script src="/skin/frontend/unique/default/js/jquery.bxslider.start.js" type="text/javascript"></script>

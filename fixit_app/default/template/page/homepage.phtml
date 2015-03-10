@@ -50,6 +50,7 @@
         <?php echo $this->getChildHtml('header') ?>
         <div class="main-container col1-layout" style="padding:0;">
             <div class="main">
+                
                 <!-- HEADLINES -->
                 <layout>
                     <cms_page>
@@ -61,13 +62,18 @@
                     </cms_page>
                     </layout>
                     <div class="col-75">
+                        <?php echo $this->getChildHtml('bannerpro'); ?>
+
+                    </div>
+                   <!-- <div class="col-75">
+
                         <a href="accessoires.html"><div class="headline-big">
                             <div class="headlinebiginhoud">
                                 <div class="headlinebigtitle">Toe aan nieuwe accessoires voor uw smartphone of tablet?</div>
                                 <div class="headlinebigmore">Klik hier</div>
                             </div>
                         </div></a>
-                    </div>
+                    </div>-->
                     <div class="col-25">
                         <a href="/onderdelen/smartphone-onderdelen.html"><div class="headline-small1">
                             <div class="headlinesmallinhoudupper">
@@ -110,8 +116,10 @@
                         
                             <div class="producten">
                                 <div class="banner75">Populaire accessoires</div>
-                                <?php echo $this->getChildHtml('bestseller_parts') ?>
+                                <?php echo $this->getChildHtml('bestseller_parts') ?> 
                             </div>
+
+                            
                     </div>
                     <div class="col-25">
                         <a class="no-underline" href="http://www.the-gsmstore.nl/reparatie">

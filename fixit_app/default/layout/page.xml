@@ -141,6 +141,8 @@
                 <action method="setLimit"><value>3</value></action>
             </block>
 
+            <block type="bannerpro/bannerpro" name="bannerpro" template="bannerpro/bannerpro.phtml" />
+
             <block type="page/html_wrapper" name="footer.before" as="footer_before" translate="label">
                 <label>Page Footer</label>
                 <action method="setElementClass"><value>footer-before-container</value></action>

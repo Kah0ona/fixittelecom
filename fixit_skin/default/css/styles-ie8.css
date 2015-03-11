@@ -8934,6 +8934,14 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
     margin-top: 0px;
   }
 }
+form .error {
+  border: 1px solid red;
+}
+
+li.gfield {
+  margin-bottom: 10px;
+}
+
 /* ============================================ *
  * Calendar styles (restore styles from /js/calendar)
  * ============================================ */

@@ -81,6 +81,7 @@ $mq-fixed-value: 1024;
 .scaffold-form input[type=text] {
   width: 330px;
   max-width: 100%;
+  margin:10px 0px;
 }
 .scaffold-form .input-box {
   float: left;

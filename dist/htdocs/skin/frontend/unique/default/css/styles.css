@@ -8462,6 +8462,10 @@ body.newsletter-manage-index .my-account .form-list {
     width: 100%;
   }
 }
+input[type=text] {
+  margin: 10px 0px;
+}
+
 /* ============================================ *
  * PayPal
  * ============================================ */

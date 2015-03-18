@@ -26,9 +26,14 @@
 /**
  * @var Mage_Page_Block_Html_Header $this
  */
-?>
 
-<!-- <div class="header-language-background">
+
+Mage::getSingleton('core/session', array('name'=>'frontend'));
+$session = Mage::getSingleton('customer/session', array('name'=>'frontend'));
+
+?>
+<?php if($session->isLoggedIn()){ ?>
+<div class="header-language-background">
     <div class="header-language-container">
         <div class="store-language-container">
             <?php echo $this->getChildHtml('store_language') ?>
@@ -38,10 +43,8 @@
 
         <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
     </div>
-</div> -->
-
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+</div> 
+<?php } ?>
 
 <div class="headerbg">
 <header id="header" class="page-header">

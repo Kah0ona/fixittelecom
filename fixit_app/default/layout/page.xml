@@ -139,7 +139,7 @@
 
                 <label>Bestseller</label>
                 <action method="setLimit"><value>3</value></action>
-            </block>
+            </block> 
 
             <block type="bannerpro/bannerpro" name="bannerpro" template="bannerpro/bannerpro.phtml" />
 

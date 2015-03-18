@@ -26,7 +26,24 @@
 /* ============================================ *
  * Customer
  * ============================================ */
-
+.checkout-onepage-index{
+    .thumbnail1{display:none;}
+    .thumbnail2{display:none;}
+}
+.block-account{
+    .block-title{
+        padding-top:10px;
+    }
+    ul{
+        margin-left: 5px;
+        strong{
+            color:#636363; 
+        }
+        a{
+          color:#636363;   
+        }
+    }
+}
 .customer-account-login {
     .scaffold-form {
         label:first-child {

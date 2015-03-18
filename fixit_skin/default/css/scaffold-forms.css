@@ -91,6 +91,14 @@ $mq-fixed-value: 1024;
   padding-top: 5px;
 }
 
+input[type=text] {
+  margin: 10px 0px;
+}
+
+#input_2_2_3 {
+  width: 150px;
+}
+
 @media only screen and (max-width: 599px) {
   .scaffold-form label:first-child {
     float: none;

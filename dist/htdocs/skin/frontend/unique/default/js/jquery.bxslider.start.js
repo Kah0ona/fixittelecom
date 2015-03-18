@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
   $('.Slider').bxSlider({
-    mode: 'horizontal',
+    mode: 'fade',
     minSlides: 1,
     maxSlides: 1,
     startSlide: 1,

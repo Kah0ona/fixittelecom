@@ -81,7 +81,7 @@ $mq-fixed-value: 1024;
 .scaffold-form input[type=text] {
   width: 330px;
   max-width: 100%;
-  margin:10px 0px;
+  margin: 10px 0px;
 }
 .scaffold-form .input-box {
   float: left;
@@ -89,6 +89,14 @@ $mq-fixed-value: 1024;
 }
 .scaffold-form .buttons-set {
   padding-top: 5px;
+}
+
+input[type=text] {
+  margin: 10px 0px;
+}
+
+#input_2_2_3 {
+  width: 150px;
 }
 
 @media only screen and (max-width: 599px) {

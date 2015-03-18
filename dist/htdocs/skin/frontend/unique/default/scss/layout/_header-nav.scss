@@ -282,17 +282,15 @@ nav {
         display: block;
     }
 }
-@media all and (max-width: 1270px) {
+@media all and (max-width: 1300px) {
   .nav-1{
     margin-left: 20px;
   }
-  .nav-primary{
-    width:585px !important;
-  }
+
   .breadcrumbs{
     margin-left: 20px;
   }
-  #search_mini_form{
+  #search_mini_form{ 
     width:230px;
     float:right;
   }

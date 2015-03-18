@@ -26,12 +26,46 @@
 /* ============================================ *
  * Contacts
  * ============================================ */
-
+ #map_canvas img{
+    max-width: inherit;
+ }
+ .act-form{
+    width:75% !important; 
+ }
+.cont-g{
+    p{
+        font-size:1rem !important; 
+    }
+    a{ 
+        font-size:1rem !important;
+    }
+}
+.form-list{
+    width:50%;
+    float:left; 
+    input{
+        width:90%; 
+    }
+    textarea{
+        width:100%; 
+    }
+}
+.form-list-right{
+    label{
+    margin-bottom:10px;
+    }
+     textarea{
+        height:175px; 
+        max-width: none;
+    }   
+}
+.button-cont{
+    margin-bottom: -50px !important;
+}
 .contacts-index-index {
     .buttons-set {
         margin-left: $trim;
         max-width: 435px;
-
         p.required {
             float: left;
         }
@@ -53,23 +87,30 @@
     }
 }
 #contactForm{
+    padding-left: 0px !important; 
     .button{
-        float:left;
+        float: right;
     }
     .col-25{
 
-    h3{
-        display: block;
-        color:#3399CC;
-    }
-    .banner-75{
-        h2{
-          color:white !important;  
+        h3{
+            display: block;
+            color:#3399CC;
         }
-        
-    }
+        .banner-75{
+            h2{
+              color:white !important;  
+            }
+            
+        }
     
-}
+    }
+    ul{
+        list-style:none;
+    }
+    li{
+        margin-left: 0px;
+    }
 }
 .required-verplichtevelden{
     margin-right: 10% !important;
@@ -78,11 +119,40 @@
     }
 }
 @media all and (max-width: 850px){
-
+    .min-marg-botm{
+            margin-bottom: -100px; 
+        }
     #contactForm{
         .col-25{
-            width:100%;
+            width:100% !important;
         }
+        .button{
+            margin-left:0px !important;
+        }
+
+    }
+    .form-list{ 
+
+        input{
+            width:80% !important;
+        } 
+        textarea{
+            width:80% !important;
+            max-width: none;
+        }
+
+    }
+}
+@media all and (max-width: 550px){
+    .form-list{ 
+        width:100%;
+        input{
+            width:100% !important;
+        }
+        textarea{
+            width:100% !important;
+        } 
+
     }
 }
 input[type=text]{

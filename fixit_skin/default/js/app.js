@@ -725,6 +725,17 @@ $j(document).ready(function () {
         }
     });
 
+
+	$j('.skip-link[href="#header-search"').on('click',function(e){
+		e.preventDefault();
+		if($j('#header-search').children().size() > 0){
+			//do nothing
+		} else {
+			$j('.top-search-smaller').appendTo('#header-search');
+		}
+
+	});
+
     $j('#header-cart').on('click', '.skip-link-close', function(e) {
         var parent = $j(this).parents('.skip-content');
         var link = parent.siblings('.skip-link');

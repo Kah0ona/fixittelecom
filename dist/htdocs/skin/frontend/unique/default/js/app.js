@@ -726,7 +726,7 @@ $j(document).ready(function () {
     });
 
 
-	$j('.skip-link[href="#header-search"').on('click',function(e){
+	$j('.skiplinkheadersearch').on('click',function(e){
 		e.preventDefault();
 		if($j('#header-search').children().size() > 0){
 			//do nothing

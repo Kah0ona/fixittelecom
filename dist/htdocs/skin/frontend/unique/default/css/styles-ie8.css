@@ -8996,6 +8996,16 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   }
 }
 @media all and (max-width: 910px) {
+  .header-nav {
+    position: relative;
+  }
+
+  .top-search-smaller {
+    float: none;
+    position: absolute;
+    right: 0px;
+  }
+
   #search_mini_form {
     display: block;
   }
@@ -9008,6 +9018,24 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   }
 }
 @media all and (max-width: 770px) {
+  .top-search-smaller {
+    float: none;
+    width: 100% !important;
+    position: static;
+    z-index: 9999999;
+    margin-top: -7px;
+  }
+
+  #search_mini_form {
+    width: 100%;
+    float: none;
+  }
+
+  #header-search {
+    padding: 0px;
+    height: 50px;
+  }
+
   .nav-2 .level1 ul {
     width: inherit;
     top: -1px !important;
@@ -9039,7 +9067,7 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
     float: none !important;
   }
   #nav #search_mini_form {
-    display: none;
+    display: block;
   }
 
   .nav-1 {

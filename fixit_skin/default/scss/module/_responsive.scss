@@ -1,3 +1,6 @@
+.main-container{
+    min-height: 500px; 
+}
 .send-small{
     float:right;
     margin-top:-71px;
@@ -121,6 +124,21 @@ width:40%;
     }
 }
 @media all and (max-width: 770px) {
+    .top-contacts{
+        position: absolute;
+        width:100px;
+        right: 10px;
+        top:10px;
+        margin-right:0px;
+        margin-top: 0px;
+        img{
+            width:30px;
+            height: 30px;
+            float:left;
+            margin-right:20px;
+
+        }
+    }
     .top-search-smaller{
     float:none;
     width:100% !important;

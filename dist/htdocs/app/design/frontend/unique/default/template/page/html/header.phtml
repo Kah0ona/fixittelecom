@@ -53,7 +53,15 @@ $session = Mage::getSingleton('customer/session', array('name'=>'frontend'));
             <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
             <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
         </a>
-
+        <div class="top-contacts">
+        <a href="mailto:info@fixittelecom.nl">
+             <img style="width:27px;" src="<?php echo $this->getSkinUrl('images/mail.png'); ?>" alt="arrow"/>
+        </a>
+        <a href="tel:0717370007">
+             <img src="<?php echo $this->getSkinUrl('images/phone2.png'); ?>" alt="arrow"/>
+        </a> 
+        </div>
+        
         <?php // In order for the language switcher to display next to logo on smaller viewports, it will be moved here.
               // See app.js for details ?>
         <div class="store-language-container"></div>
@@ -65,7 +73,7 @@ $session = Mage::getSingleton('customer/session', array('name'=>'frontend'));
                 <span class="label"><?php echo $this->__('Menu'); ?></span>
             </a>
 
-            <a href="#header-search" class="skip-link skip-search">
+            <a href="#header-search" class="skip-link skip-search skiplinkheadersearch">
                 <span class="icon"></span> 
                 <span class="label"></span>
             </a>

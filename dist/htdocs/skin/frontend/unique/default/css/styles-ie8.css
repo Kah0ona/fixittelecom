@@ -2683,6 +2683,20 @@ body {
 /* ============================================ *
  * Header
  * ============================================ */
+.top-contacts {
+  float: right;
+  margin-right: 222px;
+  margin-top: 7px;
+  width: 200px;
+  height: 50px;
+}
+.top-contacts img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 20px;
+}
+
 .page-header {
   max-width: 1260px;
   margin: 0 auto;
@@ -8893,6 +8907,10 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   color: white;
 }
 
+.main-container {
+  min-height: 500px;
+}
+
 .send-small {
   float: right;
   margin-top: -71px;
@@ -9018,6 +9036,21 @@ body[class*="checkout-multishipping-"] #review-buttons-container {
   }
 }
 @media all and (max-width: 770px) {
+  .top-contacts {
+    position: absolute;
+    width: 100px;
+    right: 10px;
+    top: 10px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .top-contacts img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+  }
+
   .top-search-smaller {
     float: none;
     width: 100% !important;

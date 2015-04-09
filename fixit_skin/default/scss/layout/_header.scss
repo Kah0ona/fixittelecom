@@ -29,7 +29,20 @@
 
 
 
+.top-contacts{
+    float:right;
+    margin-right: 222px;
+    margin-top: 7px; 
+    width:200px;
+    height:50px;
+    img{
+        width:30px;
+        height: 30px;
+        float:left;
+        margin-right:20px;
 
+    }
+}
 @include bp(min-width, $bp-medium + 1) {
 
     .page-header {

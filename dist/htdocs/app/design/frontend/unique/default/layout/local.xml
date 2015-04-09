@@ -1,0 +1,22 @@
+<?xml version="1.0"?> 
+<!--
+/**
+ * local.xml
+ *
+ * Local layout modifications for our local theme
+ *
+ * @category    design
+ * @package     my_theme_default
+ * @copyright   Copyright (c) 2013 Magento.
+ */
+-->
+<layout version="0.1.0"><!-- everything goes in here -->
+ <default> <!-- this container tells you what your default layout is. like 'header' and 'footer' -->
+	<customer_account_create>
+        <reference name="customer_form_register">
+            <action method="setShowAddressFields"><value>true</value></action>
+        </reference>
+	</customer_account_create>
+  </default>
+</layout>
+

@@ -100,7 +100,8 @@ $product-column-spacing: 20px;
     position: relative;
     margin-bottom: $product-column-spacing;
     text-align: center;
-
+    background-color: white;
+    border: 1px solid #ccc;
     &:after {
         @include clearfix;
     }

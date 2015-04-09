@@ -3,6 +3,11 @@
 		display:none !important;
 	}
 }
+
+.category-image, li > a > .count, .apptrian-subcategories-heading {
+	display: none !important;
+}
+
 .bx-controls{
 	display:none;
 }
